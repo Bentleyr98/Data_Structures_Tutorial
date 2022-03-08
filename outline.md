@@ -23,6 +23,6 @@ This is a line of code
 def start(count):
   return count+=1
   
-count = 6
+start(6)
 
 ```
