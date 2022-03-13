@@ -1,28 +1,29 @@
-# Main Section
-# Stack
-- Item 1
-  - third thing
-- Item 2
-1. First thing
-2. second thing
+#Outline for Final Project
+#####Name: Bekah Bentley
+#####Class & Section: CSE 212-04
 
-# Linked Lists
-# Tree
+###I. Welcome
+####Introduction
+####Contact
 
-Create links
-Here is a link to the starting code [link](0-welcome.md)
+###II. Queue
+####Introduction
+####
+####Multiple Conditions
+####Example
+####Problem to Solve
 
+###III. Linked List
+####Introduction
+####For Loops (Iterators)
+####Using Range with For Loops
+####While Loops
+####Example
+####Problem to Solve
 
-Operation       | Efficency
-----------------|-----------
-Enqueue         | O(1)
-Dequeue         | O(1)
-
-This is a line of code
-```
-def start(count):
-  return count+=1
-  
-start(6)
-
-```
+###IV. Tree
+####Introduction
+####Structure of a Python Function
+####Organizing Functions
+####Example
+####Problem to Solve
