@@ -59,7 +59,7 @@ def add_customer(customers):
     customer = input("Please enter your name: ")
     customers.append(customer)
 
-def remove_customer(customers):
+def remove_customer(customers): 
     customer = customers.pop(0)
     return customer
 
