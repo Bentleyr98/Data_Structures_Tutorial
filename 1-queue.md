@@ -31,8 +31,12 @@ In some cases it might important for us to know how many items we have in our qu
 ```length = len(name_of_queue)```
 
 #### Looping through Lists (Arrays)
-We can loop through our list/queues fairly easy by using a for or range loop.
+We can loop through our list/queues to access the values fairly easy by using a for or range loop like this.
 
+```
+for item in name_of_queue:
+        print(item)
+```
 #### Big O Notation
 Big O Notation is looking at the worst case scenario that allows us to evaluate how effecient our algorthim is.
 
