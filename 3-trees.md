@@ -1,4 +1,4 @@
-## IV. Tree
+## III. Tree
 
 #### Introduction
 Trees are a great way to hold data that we can potentially access faster then we would with an array. There a lot of different types of trees, but today we'll keep it pretty general.
