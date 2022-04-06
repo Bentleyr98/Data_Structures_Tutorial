@@ -19,7 +19,14 @@ First, we must create a new node. Second, we need to start attaching it
 
 
 #### Accessing Values
-Accessing values in linked lists are very simple. We can get the value (data) with this code ```yield curr.data``` to change the value, we can reassign it as ```curr.data = value```.
+Accessing values in linked lists are very simple. We can get the value (data) with this code to change the value.
+```python
+yield curr.data
+``` 
+We can also reassign the value with this code.
+```python 
+curr.data = value
+```
 
 #### Big O Notation
 Operation       | Efficency
@@ -29,8 +36,25 @@ Looping         | O(n)
 Insert          | O(n)
 
 #### Example -- Remove Duplicates
+Here we have an example of removing duplicates from a linked list.
+
+```python
+
+
+
+
+```
 
 
 #### Problem to Solve -- Enter In A Book Series In Order 
+We have a challenge for you. For this problem, you will be tasked with reordering this linked list of books so that the books are in order for the series.
 
-[Home Page](0-welcome.md)
+Here is your [starting code](2-books.py)
+
+Once finished, compare your answer to this [solution](2-books_solution.py).
+Remember, there's more then one way to solve a problem in programming. 
+
+
+### Next Data Structure
+You've finished this part of the tutorial! We do have one more data structure to teach.
+Please head on back to the [welcome page](0-welcome.md) to start the last one.
