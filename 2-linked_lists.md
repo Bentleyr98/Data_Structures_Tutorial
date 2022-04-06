@@ -12,7 +12,7 @@ One of the other distinguishing features of this structure (similiar to a train)
 When it comes down to it, a linked list is still essentially a list. To insert, we will still need to loop through the list, unless we insert at the head or tail. Because a linked list is structured, the head and tail are predefined positions that we maintain. This would make inserting at those specified places instaneous. 
 
 To insert in the list, there are certain steps to accomplish. 
-First, we must create a new node. Second, we need to
+First, we must create a new node. Second, we need to start attaching it 
 ![](DLLInsertGfG.png)
 
 #### Removing

@@ -5,25 +5,53 @@ Queues are a great way to keep order. It's the first in, first out principle. We
 ### Structure
 Queues look like lists. We can initialize a queue like we would a list/queue with this code.
 
-```name_of_queue = []```
+```python
+name_of_queue = []
+```
 
 How queues work is that they remove one at the top (left side) of the list, and add at the back (right side) as directed. Just like how any normal checkout line at the grocery store would work.
 
 ![](queuesAA.png)
 
 ### Inserting
-To insert in a queue, we are simply appending to the back of the list (that's how queues work, remember?). We can do this with this code ```name_of_queue.append(item)``` it's a very simple and straightforward way to work with this array.
+To insert in a queue, we are simply appending to the back of the list (that's how queues work, remember?). We can do this with this code 
+
+```python
+name_of_queue.append(item)
+```
+It's a very simple and straightforward way to work with this array.
 
 ### Removing
-Removing an item from a queue is also really simple. We can treat it just like we would any list. By using ```name_of_queue.pop(0)``` this will take off the first item of our queue. We can remove items from our list or queue by using indexing. Remember indexes in queues and lists start on 0. That's why ```name_of_queue.pop(0)``` works. "0" is the first item in our queue. We can then save that item we "popped" into a variable and then either print it or whatever else we need to do with it like so
+Removing an item from a queue is also really simple. We can treat it just like we would any list. By using
+ ```python 
+ name_of_queue.pop(0)
+ ``` 
+ this will take off the first item of our queue. We can remove items from our list or queue by using indexing. Remember indexes in queues and lists start on 0. That's why 
+ ```python
+ name_of_queue.pop(0)
+ ``` 
+ works. "0" is the first item in our queue. We can then save that item we "popped" into a variable and then either print it or whatever else we need to do with it like so
 
-```item = name_of_queue.pop(0)  ```
-```print(item)```
+```python
+item = name_of_queue.pop(0) 
+```
+```python
+print(item)
+```
 
 In life, queues don't always work perfectly. Sometimes people get tired of waiting, other commitments, etc. and need to leave the line. That would be exiting a queue. By using indexing slicing, we can access any part of our queue. If we need to remove an item we can use the pop function but index of a "0" we can use any other index number to access the value associated with that index. 
 
-```name_of_queue.pop(5)```
-```del name_of_queue[0]```
+```python
+name_of_queue.pop(5)
+```
+```python
+del name_of_queue[0]
+```
+
+To delete by value we can use remove()
+```python
+name_of_queue.remove(value)
+```
 
 We can also use the delete function shown above which will remove that value. Using "pop" and "del" will remove that value. Just how all python lists work when using these functions, all values will slide over to the left by one changing their index values and effectively shortening the list by one.
 
