@@ -34,8 +34,6 @@ Removing an item from a queue is also really simple. We can treat it just like w
 
 ```python
 item = name_of_queue.pop(0) 
-```
-```python
 print(item)
 ```
 
@@ -48,12 +46,12 @@ name_of_queue.pop(5)
 del name_of_queue[0]
 ```
 
-To delete by value we can use remove()
+To delete by value we can use the remove() function
 ```python
 name_of_queue.remove(value)
 ```
 
-We can also use the delete function shown above which will remove that value. Using "pop" and "del" will remove that value. Just how all python lists work when using these functions, all values will slide over to the left by one changing their index values and effectively shortening the list by one.
+We can also use the delete function shown above which will remove that value. Using "pop", "remove", and "del" will remove that value. Just how all python lists work when using these functions, all values will slide over to the left by one changing their index values and effectively shortening the list by one.
 
 ### Finding the Length of a List
 In some cases it might important for us to know how many items we have in our queue. We can get that number by running the code below.
