@@ -73,11 +73,18 @@ curr.data = value
 ```
 
 #### Big O Notation
+As you notice in the table below, our Big O Notation for most of these operations is O(1). This makes using Linked Lists very benefical for our coding.
 Operation       | Efficency
 ----------------|-----------
 Looping         | O(n)
-*Remove         | O(n) or O(1)
-Insert          | O(n)
+Remove middle   | O(n)
+Remove head     | O(1)
+Remove tail     | O(1)
+Insert middle   | O(n)
+Insert head     | O(1)
+Insert tail     | O(1)
+Size            | O(1)
+Empty           | O(1)
 
 #### Example -- Remove Duplicates
 Here we have an example of removing duplicates from a linked list.
