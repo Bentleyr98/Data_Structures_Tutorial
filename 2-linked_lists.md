@@ -1,14 +1,14 @@
 ## II. Linked List
-#### Introduction
+### Introduction
 Linked lists are very similiar to lists and arrays, with the exception that they are linked. Hence they are called linked lists.
 
-#### Structure
+### Structure
 I've always looked at linked lists like trains. Each train car has a connecting piece to the next and previous train cars. Like those train cars, each node has on one end a pointer pointing to the previous car called prev, and on the other side another pointer pointing to the next car called next. It keeps the entire list ordered and connected to each other.
 One of the other distinguishing features of this structure (similiar to a train) is that there is a head and a tail to each linked list. The head shows where it starts and the tail shows the end.
 
 ![](DLLGfG.png)
 
-#### Inserting
+### Inserting
 When it comes down to it, a linked list is still essentially a list. To insert, we will still need to loop through the list, unless we insert at the head or tail. Because a linked list is structured, the head and tail are predefined positions that we maintain. This would make inserting at those specified places instaneous. Otherwise we loop through until we find the node we want to modify or the place where we want to insert a new node.
 
 To insert in the list, there are certain steps to accomplish. 
@@ -59,10 +59,10 @@ self.head = new_node
 
 Inserting at the tail is a very similar process. Just remember which nodes the "prev" and "next" point to.
 
-#### Removing
+### Removing
 
 
-#### Accessing Values
+### Accessing Values
 Accessing values in linked lists are very simple. We can get the value (data) with this code to change the value.
 ```python
 yield curr.data
@@ -72,7 +72,7 @@ We can also reassign the value with this code.
 curr.data = value
 ```
 
-#### Big O Notation
+### Big O Notation
 As you notice in the table below, our Big O Notation for most of these operations is O(1). This makes using Linked Lists very benefical for our coding.
 Operation       | Efficency
 ----------------|-----------
@@ -86,7 +86,7 @@ Insert tail     | O(1)
 Size            | O(1)
 Empty           | O(1)
 
-#### Example -- Remove Duplicates
+### Example -- Remove Duplicates
 Here we have an example of removing duplicates from a linked list.
 
 ```python
@@ -97,7 +97,7 @@ Here we have an example of removing duplicates from a linked list.
 ```
 
 
-#### Problem to Solve -- Enter In A Book Series In Order 
+### Problem to Solve -- Enter In A Book Series In Order 
 We have a challenge for you. For this problem, you will be tasked with reordering this linked list of books so that the books are in order for the series.
 
 Here is your [starting code](2-books.py)
