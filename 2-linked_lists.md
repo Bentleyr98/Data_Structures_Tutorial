@@ -19,7 +19,7 @@ E = LinkedList.Node(value)
 Because we have selected node B and inserting E, we need to make all the edits using only nodes B and E.
 Second, we need to start attaching it to the nodes B and C by setting the "prev" of node E to the current node (B). 
 ```python
-E.prev = current
+E.prev = B
 ```
 Third, set the "next" of node E to the next node after B, which is C.
 ```python
@@ -54,7 +54,7 @@ self.head.prev = E
 ```
 Set the head equal to E
 ```python
-self.head = new_node
+self.head = E
 ```
 
 Inserting at the tail is a very similar process. Just remember which nodes the "prev" and "next" point to.
@@ -95,7 +95,6 @@ Here we have an example of removing duplicates from a linked list.
 
 
 ```
-
 
 ### Problem to Solve -- Enter In A Book Series In Order 
 We have a challenge for you. For this problem, you will be tasked with reordering this linked list of books so that the books are in order for the series.
