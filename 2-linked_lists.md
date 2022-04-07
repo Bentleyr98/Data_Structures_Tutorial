@@ -9,11 +9,55 @@ One of the other distinguishing features of this structure (similiar to a train)
 ![](DLLGfG.png)
 
 #### Inserting
-When it comes down to it, a linked list is still essentially a list. To insert, we will still need to loop through the list, unless we insert at the head or tail. Because a linked list is structured, the head and tail are predefined positions that we maintain. This would make inserting at those specified places instaneous. 
+When it comes down to it, a linked list is still essentially a list. To insert, we will still need to loop through the list, unless we insert at the head or tail. Because a linked list is structured, the head and tail are predefined positions that we maintain. This would make inserting at those specified places instaneous. Otherwise we loop through until we find the node we want to modify or the place where we want to insert a new node.
 
 To insert in the list, there are certain steps to accomplish. 
-First, we must create a new node. Second, we need to start attaching it 
+First, we must create a new node called "E".
+```python
+E = LinkedList.Node(value)
+```
+Because we have selected node B and inserting E, we need to make all the edits using only nodes B and E.
+Second, we need to start attaching it to the nodes B and C by setting the "prev" of node E to the current node (B). 
+```python
+E.prev = current
+```
+Third, set the "next" of node E to the next node after B, which is C.
+```python
+E.next = B.next
+```
+Fourth, set the "prev" of the "next" node (C) after the current node to the node E.
+```python
+B.next.prev = E
+```
+Lastly, set the "next" of the current node (B) to the node E.
+```python
+B.next = E
+```
+Node E has been sucessfully inserted between B and C.
 ![](DLLInsertGfG.png)
+
+
+Inserting at the head or tail is pretty straightforward and is not as difficult as inserting in the middle of the list.
+
+Inserting at the head:
+Create a new node called "E".
+```python
+E = LinkedList.Node(value)
+```
+Set the "next" of E to the current head (A)
+```python
+E.next = self.head
+```
+Set the "prev" of the current head(A) to E 
+```python
+self.head.prev = E
+```
+Set the head equal to E
+```python
+self.head = new_node
+```
+
+Inserting at the tail is a very similar process. Just remember which nodes the "prev" and "next" point to.
 
 #### Removing
 
